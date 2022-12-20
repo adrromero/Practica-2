@@ -40,7 +40,7 @@ def ordenarPalabras(f):
             cont += 1
             f = f[f.find(" ") + 1:]
         elif f.find(" ") == -1:
-            palabras.append(f[:f.find(" ")])
+            palabras.append(f)
             break
         else:
             palabras.append(f[:f.find(" ")])
@@ -55,3 +55,7 @@ def ordenarPalabras(f):
 
     for cadena in palabras:
         nueva_frase += cadena + " "
+    return nueva_frase
+
+
+print(ordenarPalabras("Casa Bosque Azul"))
