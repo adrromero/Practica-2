@@ -58,4 +58,5 @@ def ordenarPalabras(f):
     return nueva_frase
 
 
+print(consonantesFuera("Casa Bosque Azul"))
 print(ordenarPalabras("Casa Bosque Azul"))
