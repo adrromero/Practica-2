@@ -26,3 +26,11 @@ def sinVocales(f):
     for letra in vocales:
         f = f.replace(letra, "")
     return f
+
+
+frase = input("Dame una frase: ")
+
+print(sinVocales(frase.lower()))
+
+frase = frase[::-1]
+print(frase)
