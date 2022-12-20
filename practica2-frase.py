@@ -21,6 +21,10 @@ Fes un petit tutorial en PDF amb captures de què has fet i com justificant tot.
 Adjunta al tutorial la URL del repositori."""
 
 
-
-
-
+def consonantesFuera(f):
+    vocales = ("a", "e", "i", "o", "u")
+    nueva_frase = ""
+    for i in range(len(f)):
+        if f[i].lower() in vocales:
+            nueva_frase += f[i]
+    return nueva_frase
